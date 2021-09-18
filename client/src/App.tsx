@@ -1,5 +1,8 @@
 import { MemoryRouter , Route, Switch } from 'react-router-dom';
 
+import { UserProtectedRoutes } from './routes';
+
+
 function App() {
   return (
     <MemoryRouter>
@@ -11,12 +14,16 @@ function App() {
 function AppRouter() {
  return(
     <Switch>
-      <Route exact path='/'>
-        home
-      </Route> 
-      <Route exact path='/about'>
-        About
-      </Route> 
+      {UserProtectedRoutes.map((route: any) => {
+          return (
+            <Route
+              exact
+              path={route.path}
+              component={route.component}
+            />
+          )
+        }
+      )}
     </Switch> 
  )
 }
