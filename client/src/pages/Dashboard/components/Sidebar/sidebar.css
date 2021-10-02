@@ -1,0 +1,9 @@
+.sidebarContainer {
+    list-style-type: none;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: #FBFDFF;
+    box-shadow: 10px 10px 15px rgba(47, 51, 47, 0.15);
+}

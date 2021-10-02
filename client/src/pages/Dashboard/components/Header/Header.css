@@ -1,0 +1,57 @@
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    width: 100vw;
+    background-color: #FBFDFF;
+    z-index: 1;
+    box-shadow: 0 10px 15px rgba(47, 51, 47, 0.15);
+}
+
+.appLogo {  
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.appLogo > img {
+    object-fit: contain; 
+    height: 70px;
+}
+
+.appName {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 1rem;
+}
+
+.appTitle {
+    font-size: 2em !important;
+}
+
+.appName > span {
+    color: #66D8A0;
+    font-size: 0.8em;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.userMenu {
+    display: flex;
+    align-items: center;
+}
+
+.userMenu > span {
+    display: flex;
+    align-items: center;
+    color: #66D8A0;
+    font-size: 1em;
+    font-weight: 900;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.userMenu > span > svg {
+    margin-left: 0.5rem;
+}

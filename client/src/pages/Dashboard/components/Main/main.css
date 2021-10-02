@@ -1,0 +1,8 @@
+.mainContainer{
+    display: flex;
+    height: calc(100vh - 90px);
+    width: calc(100vw - 250px);
+    z-index: -1;
+    position: absolute;
+    right: 0;
+}
